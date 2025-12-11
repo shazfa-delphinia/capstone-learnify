@@ -2,10 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "src": "ml_server.py",
-      "use": "@vercel/python"
-    },
-    {
       "src": "*.html",
       "use": "@vercel/static"
     },
@@ -25,7 +21,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "ml_server.py"
+      "dest": "https://capstone-learnify-api.onrender.com/$1" 
     },
     {
       "src": "/(.*)",
