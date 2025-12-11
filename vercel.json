@@ -1,6 +1,7 @@
 {
   "version": 2,
   "builds": [
+    // HANYA KONFIGURASI STATIS YANG TERSISA
     {
       "src": "*.html",
       "use": "@vercel/static"
@@ -19,6 +20,7 @@
     }
   ],
   "routes": [
+    // PENGALIHAN (REDIRECT) ke Render URL
     {
       "src": "/api/(.*)",
       "dest": "https://capstone-learnify-api.onrender.com/$1" 
